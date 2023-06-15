@@ -13,7 +13,7 @@
   position: relative;
 }
 
-.product-button {
+.productButton {
   position: absolute;
   height: 50px;
 
@@ -21,19 +21,19 @@
   left: 10px;
 }
 
-.product-title {
+.productTitle {
   font-size: 50px;
   margin-bottom: 10px;
 }
 
-.product-price {
+.productPrice {
   font-size: 20px;
   font-weight: bold;
   color: black;
   margin: 20px;
 }
 
-.product-image {
+.productImage {
   width: 500px;
   height: 300px;
   object-fit: cover;
@@ -41,7 +41,7 @@
   border-radius: 10px;
 }
 
-.product-description {
+.productDescription {
   font-size: 17px;
   color: black;
   line-height: 1.5;

@@ -1,4 +1,4 @@
-import SliderMarkup from "./components/SliderMarkup";
+import SliderMarkup from "./components/markup/SliderMarkup";
 
 function App() {
   return (

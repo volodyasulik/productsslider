@@ -1,8 +1,8 @@
 import { Carousel, Col, Row } from "antd";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import ProductCard from "./productComponents/Card";
-import DetailsPage from "./productComponents/Details";
+import ProductCard from "../productComponents/cardComponent/Card";
+import DetailsPage from "../productComponents/detailsComponent/Details";
 
 const contentStyle = {
   height: "550px",

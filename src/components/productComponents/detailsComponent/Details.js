@@ -3,7 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { LeftOutlined, LoadingOutlined } from "@ant-design/icons";
 import { Spin } from "antd";
-import "./DetailsStyle.css";
+import styles from "./DetailsStyle.module.css";
 
 const antIcon = (
   <LoadingOutlined
@@ -34,26 +34,30 @@ const DetailsPage = (props) => {
     props.closePage();
   };
   return (
-    <div className="detailsContainer">
+    <div className={styles.detailsContainer}>
       {productsData ? (
         <div>
-          <div className="product">
+          <div className={styles.product}>
             <div>
               <Button
-                className="product-button"
+                className={styles.productButton}
                 type="primary"
                 onClick={closePageHandler}
                 icon={<LeftOutlined />}
               />
             </div>
-            <h2 className="product-title">{productsData.title}</h2>
+            <h2 className={styles.productTitle}>{productsData.title}</h2>
             <img
               src={productsData.thumbnail}
               alt="product"
-              className="product-image"
+              className={styles.productImage}
             />
-            <span className="product-price">{`${productsData.price}$`}</span>
-            <p className="product-description">{productsData.description}</p>
+            <span
+              className={styles.productPrice}
+            >{`${productsData.price}$`}</span>
+            <p className={styles.productDescription}>
+              {productsData.description}
+            </p>
           </div>
         </div>
       ) : (
