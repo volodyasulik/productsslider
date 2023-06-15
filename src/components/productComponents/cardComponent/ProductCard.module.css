@@ -1,7 +1,8 @@
 .hoverItemContainer {
+  display: block;
+  margin: 0 auto;
   cursor: default;
   height: 450px;
-  margin-left: 37%;
   overflow: hidden;
   width: 300px;
   position: relative;
